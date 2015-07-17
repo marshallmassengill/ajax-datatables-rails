@@ -31,7 +31,7 @@ module AjaxDatatablesRails
         return records unless search_query_present?
         #conditions = build_conditions_for(params[:search][:value], params[:search][:regex])
         #raise params[:search][:value].inspect
-        records = records.where(:location.name => /#{params[:search][:value]}/i) if params[:search]
+        #records = records.where(:location.name => /#{params[:search][:value]}/i) if params[:search]
         records
       end
  
