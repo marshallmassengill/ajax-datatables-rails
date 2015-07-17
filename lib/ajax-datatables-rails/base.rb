@@ -96,7 +96,7 @@ module AjaxDatatablesRails
 
     def load_orm_extension
       case config.orm
-      when :mongoid then nil
+      when :mongoid then extend ORM::Mongoid
       when :active_record then extend ORM::ActiveRecord
       else
         nil
